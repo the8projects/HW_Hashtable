@@ -40,17 +40,39 @@ namespace HW_Hashtable
             if (hashtable.Contains(txtKey.Text.Trim()))
             {
                 hashtable.Remove(txtKey.Text.Trim());
-                MessageBox.Show("Value with key: '" + txtValue.Text + "' Deleted.");
+                MessageBox.Show("Value with key: '" + txtKey.Text.Trim() + "' Deleted.");
             }
             else
             {
                 MessageBox.Show("This key does not contain in Hashtable.");
             }
+            ClearText();
         }
 
         private void BtnShowAll_Click(object sender, RoutedEventArgs e)
         {
+            if (hashtable.Count == 0)
+            {
+                MessageBox.Show("This Hashtable has no item.");
+            }
+            else if (hashtable.Count == 1)
+            {
+                MessageBox.Show("This Hashtable has " + hashtable.Count.ToString() + " item.");
+            }
+            else
+            {
+                MessageBox.Show("This Hashtable has " + hashtable.Count.ToString() + " items.");
+            }
 
+            int i = 1;
+            ICollection iCollection = hashtable.Keys;
+            foreach (string key in iCollection)
+            {
+                MessageBox.Show(i.ToString() + ") " + hashtable[key].ToString());
+                i++;
+            }
+
+            ClearText();
         }
 
         private void ClearText()

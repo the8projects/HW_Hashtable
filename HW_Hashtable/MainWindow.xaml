@@ -6,12 +6,15 @@
         xmlns:local="clr-namespace:HW_Hashtable"
         mc:Ignorable="d"
         Title="MainWindow" Height="220.19" Width="401.306">
-    <Grid>
+    <Grid Margin="0,0,0,0">
         <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="55,129,0,0" VerticalAlignment="Top" Width="75" Click="BtnAdd_Click"/>
         <Button x:Name="btnRemove" Content="Remove" HorizontalAlignment="Left" Margin="160,129,0,0" VerticalAlignment="Top" Width="75" Click="BtnRemove_Click"/>
         <Button x:Name="BtnShowAll" Content="Show All" HorizontalAlignment="Left" Margin="265,129,0,0" VerticalAlignment="Top" Width="75" Click="BtnShowAll_Click"/>
-        <TextBox x:Name="txtKey" HorizontalAlignment="Left" Height="23" Margin="55,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285"/>
-        <Label Content="Homework: Hashmap" HorizontalAlignment="Left" Margin="55,25,0,0" VerticalAlignment="Top" Width="285" FontWeight="Bold" HorizontalContentAlignment="Center"/>
-        <TextBox x:Name="txtValue" HorizontalAlignment="Left" Height="23" Margin="55,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285"/>
+        <TextBox x:Name="txtKey" HorizontalAlignment="Left" Height="23" Margin="103,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <Label Content="Homework: Hashtable" HorizontalAlignment="Left" Margin="55,25,0,0" VerticalAlignment="Top" Width="285" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="txtValue" HorizontalAlignment="Left" Height="23" Margin="103,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <Label Content="Key:" HorizontalAlignment="Left" Margin="55,63,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
+        <Label Content="Value: " HorizontalAlignment="Left" Margin="55,89,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
+        <Label Content="PS: Remove function will remove value from specified key." HorizontalAlignment="Left" Margin="0,162,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.079,0.25" Width="393" Background="#4C646464" Height="27" FontSize="10" Foreground="#FFFF3F3F"/>
     </Grid>
 </Window>
